@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Data Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Data Management System</h1>
+        <form action="insert.php" method="post">
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="text" name="roll_number" placeholder="Roll Number">
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <form action="query.php" method="post">
+            <input type="text" name="roll_number" placeholder="Roll Number">
+            <input type="submit" value="Query">
+        </form>
+    </div>
+</body>
+
+</html>

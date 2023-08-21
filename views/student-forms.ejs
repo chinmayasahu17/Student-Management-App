@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Data Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Data Management System</h1>
+        <!-- Insert Form -->
+        <form action="/insert" method="post">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="roll_number" placeholder="Roll Number" required>
+            <input type="submit" value="Submit">
+        </form>
+
+        <!-- Query Form -->
+        <form action="/query" method="post">
+            <input type="text" name="roll_number" placeholder="Roll Number to Query" required>
+            <input type="submit" value="Query">
+        </form>
+
+        <!-- ... Other elements ... -->
+    </div>
+</body>
+
+</html>

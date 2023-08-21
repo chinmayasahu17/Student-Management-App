@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Query Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Query Result</h1>
+        <% if (student) { %>
+            <p>Name: <%= student.name %>
+            </p>
+            <p>Email: <%= student.email %>
+            </p>
+            <p>Roll Number: <%= student.roll_number %>
+            </p>
+            <p>Timestamp: <%= student.timestamp %>
+            </p>
+            <!-- ... Display other student details ... -->
+            <% } else { %>
+                <p>No student found for the given roll number.</p>
+                <% } %>
+                    <a href="/">Go back</a>
+    </div>
+</body>
+
+</html>
